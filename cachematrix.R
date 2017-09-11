@@ -1,5 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Functions to invert a matrix using caching
+# makeCacheMatrix - wraps a matrix into a makeCacheMatrix object
+# cacheSolve - gets the inverted matrix from cache or calcs it
 
 ## Create object makeCacheMatrix for use with cacheSolve
 makeCacheMatrix <- function(x = matrix()) {
@@ -24,7 +25,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Invert a matrix using cachingsolve(data)
 # Requires an makeCacheMatrix object as input
-
+# Assumes that the matrix is invertable (no error handling)
 cacheSolve <- function(x, ...) {
      ## Return a matrix that is the inverse of 'x'
      
